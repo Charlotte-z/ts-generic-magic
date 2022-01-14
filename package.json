@@ -1,0 +1,15 @@
+{
+  "name": "ts-generic-magic",
+  "version": "0.0.1",
+  "description": "Generic type of ts which is helpful for daily work",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts",
+    "generic-type"
+  ],
+  "author": "林间有风Lin",
+  "license": "MIT"
+}
