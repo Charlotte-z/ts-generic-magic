@@ -11,5 +11,12 @@
     "generic-type"
   ],
   "author": "林间有风Lin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "tsc": "^2.0.3"
+  }
 }
