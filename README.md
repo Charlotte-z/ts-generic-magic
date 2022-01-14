@@ -155,3 +155,6 @@ result: {
 
   result: { A?: never; C?: never }
 ```
+
+# Notes
+## Would be add testing later
