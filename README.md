@@ -18,6 +18,7 @@ npm install -D ts-generic-magic
 
 - [RecordType](#RecordType)
 - [EitherOr](#EitherOr)
+- [PickByType](#PickByType)
 
 # RecordType
 
@@ -103,6 +104,20 @@ const test: EitherOr<
 };
 ```
 
+# PickByType
+
+## Pick Object from type
+
+```sh
+     type Result = PickByType<{A: string; B?: string; C: number}, string>
+
+     Result => {
+         A: string;
+         B?: string;
+     }
+
+```
+
 ## Minor utils
 
 - [ExcludeRequired](#ExcludeRequired)
@@ -157,4 +172,5 @@ result: {
 ```
 
 # Notes
+
 ## Would be add testing later
