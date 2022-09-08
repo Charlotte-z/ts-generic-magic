@@ -19,6 +19,7 @@ npm install -D ts-generic-magic
 - [RecordType](#RecordType)
 - [EitherOr](#EitherOr)
 - [PickByType](#PickByType)
+- [DeepReadOnly](#DeepReadOnly)
 
 # RecordType
 
@@ -115,6 +116,28 @@ const test: EitherOr<
          A: string;
          B?: string;
      }
+
+```
+
+# DeepReadOnly
+
+## Make the each of object or array is readonly
+
+```sh
+    const test: DeepReadOnly<{
+        a: {
+            b: string;
+            c: any[]
+        }
+    }> = {
+        a: {
+            b: '',
+            c: ['1', 2]
+        }
+    }
+
+    test.a.c[0] = 1 // Index signature in type 'readonly any[]' only permits reading
+    test.a.b = 'new data' // Cannot assign to 'b' because it is a read-only property
 
 ```
 
