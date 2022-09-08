@@ -1,6 +1,6 @@
 {
   "name": "ts-generic-magic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generic type of ts which is helpful for daily work",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
