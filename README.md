@@ -140,6 +140,32 @@ const test: EitherOr<
     test.a.b = 'new data' // Cannot assign to 'b' because it is a read-only property
 
 ```
+# RemoveReadOnly
+
+## remove all readonly
+
+```sh
+  type RO = Readonly<{
+  a: string;
+  b: {
+      c: number;
+      d: string[];
+  };
+  }>;
+
+  const test1: RO = {
+  a: "1",
+  b: {
+      c: 2,
+      d: ["3"],
+  },
+  };
+  test1.a = "new"; // Cannot assign to 'a' because it is a read-only property
+
+  const test2: RemoveReadOnly<RO> = test1;
+  test2.a = "new"; // works great
+
+```
 
 ## Minor utils
 
