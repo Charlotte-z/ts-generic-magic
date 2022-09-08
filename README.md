@@ -4,7 +4,7 @@
 
 ## Description
 
-I found that I need some complex generic type in my daily work, and I make some helpful utils in my project, and I package it to npm to keep updating for a long time
+I found that I need some tricky generic type in my daily work, in mostly, I have no more time to deal with it or write a new generic type, the only thing which is want a maybe there will be a utils help me to do that tricky things, and I make some helpful utils in my project, and I package it to npm to keep updating for a long time
 
 ## Installation
 
